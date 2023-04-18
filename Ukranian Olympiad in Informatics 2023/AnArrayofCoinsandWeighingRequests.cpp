@@ -70,17 +70,7 @@ void deal(){
             
                   cout<<"? "<<m2-m1+1<<' '<<m4-m3+1<<' ';
                   
-                  assert(m1 >= 1);
-                  
-                  assert(m1 >= lo);
-                  assert(m2 > m1);
-                  assert(m2 <= n);
-                  
-                  assert(m3 > m2);
-                  assert(m4 > m3);
-                  assert(m4 <= n);
-                  
-                  prt(m1, m2);
+		  prt(m1, m2);
                   cout<<' ';
                   prt(m3, m4);
                   
