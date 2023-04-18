@@ -67,9 +67,19 @@ void deal(){
                   ll m2 = (lo-1) + (hi-lo+1)/3;
                   ll m3 = m2 + k;
                   ll m4 = m2 + (hi - lo + 1)/3;
+		    
+                  assert(m1 >= 1);
+
+                  assert(m1 >= lo);
+                  assert(m2 > m1);
+                  assert(m2 <= n);
+
+                  assert(m3 > m2);
+                  assert(m4 > m3);
+                  assert(m4 <= n);
             
                   cout<<"? "<<m2-m1+1<<' '<<m4-m3+1<<' ';
-                  
+		  
 		  prt(m1, m2);
                   cout<<' ';
                   prt(m3, m4);
